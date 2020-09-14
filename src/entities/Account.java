@@ -40,7 +40,7 @@ public class Account {
 	// Método de Saque 
 	public void withdraw(double amount) {
 		
-		balance -= amount;
+		balance -= amount + 5;
 	}
 	
 	//Método deposito 

@@ -44,6 +44,23 @@ public class Program {
 			acc5.updateBalance();
 			System.out.println("UPdate ");
 		}
+		// Conta Corrente o método com desconto de saque 
+		Account acb =  new Account(1005, "Rick", 1000.00);
+		acb.withdraw(200.0);
+		System.out.println(acb.getBalance());
+		
+		//Conta poupança sem desconto sobreescrendo o método
+		Account cbn =  new SavingsAccount(1006, "RicardoPi", 1000.0, 0.01);
+		cbn.withdraw(200.0);
+		System.out.println(cbn.getBalance());
+		
+		Account bnm = new BusinessAccount(1009, "Larissa", 1000.0, 500.00);
+		bnm.withdraw(200.0);
+		System.out.println(bnm.getBalance());
+		
+		
 	}
+	
+	
 
 }

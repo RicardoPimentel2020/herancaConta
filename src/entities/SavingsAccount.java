@@ -26,5 +26,13 @@ public class SavingsAccount extends Account {
 		balance += balance * interestRate;
 	}
 	
+	//palavra Override verifica o metodo na super clase se esta correto e também avisa que esta sobreescrevendo o metodo da super clase
+	
+	@Override
+   public void withdraw(double amount) {
+		
+		balance -= amount;
+	}
+	
 	
 }
